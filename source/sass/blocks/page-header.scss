@@ -1,0 +1,7 @@
+.page-header {
+  background: linear-gradient(to bottom, $basic-black 0%, $special-blue-dark 100%);
+
+  @media (min-width: $desktop-width) {
+    height: 814px;
+  }
+}
