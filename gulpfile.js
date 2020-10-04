@@ -9,6 +9,7 @@ const sync = require("browser-sync").create();
 const csso = require("gulp-csso");
 const rename = require("gulp-rename");
 const htmlmin = require("gulp-htmlmin");
+const concat = require('gulp-concat');
 const uglify = require("gulp-uglify-es").default;
 const imagemin = require("gulp-imagemin");
 const svgstore = require("gulp-svgstore");
