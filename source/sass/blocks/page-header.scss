@@ -13,5 +13,12 @@
   @media (min-width: $desktop-width) {
     grid-template-columns: auto 1fr;
     gap: 75px;
+    padding: 0 84px;
+  }
+}
+
+.page-header__special {
+  @media (min-width: $desktop-width) {
+    padding-left: 84px;
   }
 }
