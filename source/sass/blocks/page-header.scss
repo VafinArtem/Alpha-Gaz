@@ -3,5 +3,15 @@
 
   @media (min-width: $desktop-width) {
     height: 814px;
+    padding-top: 33px;
+  }
+}
+
+.page-header__wrapper {
+  display: grid;
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: auto 1fr;
+    gap: 75px;
   }
 }
