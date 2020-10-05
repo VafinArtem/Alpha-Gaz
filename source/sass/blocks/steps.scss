@@ -11,9 +11,11 @@
 .steps__list {
   @include list-none;
 
-  display: grid;
-  grid-template-columns: 1fr 322px 1fr;
-  column-gap: 100px;
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 322px 1fr;
+    column-gap: 100px;
+  }
 }
 
 .steps__item {
@@ -22,6 +24,24 @@
   grid-template-columns: max-content 1fr;
   grid-template-rows: repeat(2, min-content);
   column-gap: 15px;
+
+  @media (max-width: $mobile-width-only) {
+    &:not(:last-child) {
+      &::before {
+        transform: rotate(90deg);
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--refueling {
+      padding-left: 25px;
+    }
+
+    &--smile {
+      padding-left: 17px;
+    }
+  }
 
   &:not(:last-child) {
     &::before {
@@ -35,14 +55,6 @@
       margin-left: 50px;
       background-image: url("../../img/icon-arrow.png");
     }
-  }
-
-  &--refueling {
-    padding-left: 25px;
-  }
-
-  &--smile {
-    padding-left: 17px;
   }
 }
 

@@ -6,33 +6,35 @@
   }
 }
 
-.page-main__steps {
-  padding: 0 85px;
-  padding-top: 78px;
-  padding-bottom: 96px;
-}
+@media (min-width: $desktop-width) {
+  .page-main__steps {
+    padding: 0 85px;
+    padding-top: 78px;
+    padding-bottom: 96px;
+  }
 
-.page-main__deliviries {
-  padding-right: 53px;
-  padding-bottom: 79px;
-}
+  .page-main__deliviries {
+    padding-right: 53px;
+    padding-bottom: 79px;
+  }
 
-.page-main__vantage {
-  padding: 0;
-}
+  .page-main__vantage {
+    padding: 0;
+  }
 
-.page-main__getting {
-  padding: 0 85px;
-  padding-top: 81px;
-  padding-bottom: 79px;
-}
+  .page-main__getting {
+    padding: 0 85px;
+    padding-top: 81px;
+    padding-bottom: 79px;
+  }
 
-.page-main__note {
-  padding: 0 85px;
-}
+  .page-main__note {
+    padding: 0 85px;
+  }
 
-.page-main__faq {
-  padding: 0 85px;
-  padding-top: 83px;
-  padding-bottom: 79px;
+  .page-main__faq {
+    padding: 0 85px;
+    padding-top: 83px;
+    padding-bottom: 79px;
+  }
 }
