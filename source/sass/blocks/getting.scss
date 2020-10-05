@@ -22,10 +22,11 @@
   &::before {
     @include pseudo;
 
-    left: -53px;
+    right: 100%;
     top: 7px;
     counter-increment: section;
     content: counters(section, ".");
+    margin-right: 14px;
     font-size: 70px;
     font-weight: bold;
     line-height: 0.57;
