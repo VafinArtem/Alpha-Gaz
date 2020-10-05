@@ -27,6 +27,10 @@
   border: solid 1px $special-gray-light;
   border-radius: 10px;
 
+  @media (max-width: $mobile-width-only) {
+    padding: 15px;
+  }
+
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr auto;
     column-gap: 28px;
@@ -128,35 +132,48 @@
 }
 
 .services__inner {
-  padding-top: 39px;
-
   &--amount {
     display: grid;
     grid-template-columns: min-content 1fr;
     column-gap: 17px;
-    padding-top: 37px;
+    padding-top: 15px;
   }
 
   &--industrial {
+    padding-top: 15px;
     display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    padding-top: 0;
-    padding-right: 27px;
+    justify-content: center;
+    align-items: center;
   }
 
-  &--padding {
-    padding-bottom: 20px;
+  @media (min-width: $desktop-width) {
+    padding-top: 39px;
+
+    &--amount {
+      display: grid;
+      grid-template-columns: min-content 1fr;
+      column-gap: 17px;
+      padding-top: 37px;
+    }
+
+    &--industrial {
+      justify-content: space-between;
+      flex-direction: column;
+      padding-top: 0;
+      padding-right: 27px;
+    }
+
+    &--padding {
+      padding-bottom: 20px;
+    }
   }
 }
 
 .services__title {
   margin: 0;
-  color: $basic-white;
   padding-bottom: 18px;
-  font-size: 30px;
-  font-weight: 500;
-  line-height: 1.15;
+  font-size: 25px;
+  color: $basic-white;
 
   @media (min-width: $desktop-width) {
     font-size: 30px;
@@ -254,6 +271,15 @@
 
 .services__desc {
   margin: 0;
+  font-size: 17px;
+  line-height: 1.32;
+  color: $special-pink;
+
+  &--amount {
+    font-size: 49.5px;
+    font-weight: 500;
+    line-height: 49px;
+  }
 
   @media (min-width: $desktop-width) {
     font-size: 17px;

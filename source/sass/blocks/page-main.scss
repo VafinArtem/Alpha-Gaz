@@ -1,5 +1,8 @@
 .page-main {
+  padding-top: 30px;
+
   @media (min-width: $desktop-width) {
+    padding-top: 0;
     position: relative;
     top: -228px;
     margin-bottom: -228px;
