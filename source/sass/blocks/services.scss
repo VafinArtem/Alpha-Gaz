@@ -213,8 +213,11 @@
   }
 
   &--refueling {
-    width: 300px;
     padding-bottom: 20px;
+
+    @media (min-width: $desktop-width) {
+      width: 300px;
+    }
   }
 
   &--supply {

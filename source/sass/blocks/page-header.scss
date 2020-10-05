@@ -1,10 +1,10 @@
 .page-header {
   background: linear-gradient(to bottom, $basic-black 0%, $special-blue-dark 100%);
-  box-shadow: 0 0 50px 40px transparentize($basic-black, 0.6);
 
   @media (min-width: $desktop-width) {
     min-height: 814px;
     padding-top: 33px;
+    box-shadow: 0 0 50px 40px transparentize($basic-black, 0.6);
   }
 }
 
