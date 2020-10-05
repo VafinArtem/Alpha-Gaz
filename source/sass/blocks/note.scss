@@ -1,0 +1,19 @@
+.note__wrapper {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 55px;
+  padding-right: 136px;
+  background-color: $special-blue-dark;
+  border: 1px solid $special-gray-light;
+  border-radius: 10px;
+}
+
+.note__text {
+  margin: 0;
+  padding-top: 47px;
+  padding-bottom: 40px;
+  font-size: 19.5px;
+  font-style: italic;
+  line-height: 1.38;
+  color: $basic-white;
+}
