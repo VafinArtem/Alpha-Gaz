@@ -21,6 +21,7 @@
 }
 
 .contacts__link {
+  display: block;
   font-size: 30px;
   line-height: 15px;
   color: $basic-white;
@@ -37,6 +38,7 @@
   @media (min-width: $desktop-width) {
     font-size: 30px;
     line-height: 25px;
+
     &--email {
       justify-self: end;
       padding-top: 9px;
@@ -110,6 +112,7 @@
 
   &--footer {
     margin: 0 auto;
+
     @media (min-width: $desktop-width) {
       margin: 0;
       align-items: flex-start;
@@ -135,8 +138,4 @@
       }
     }
   }
-}
-
-.contacts__link {
-  display: block;
 }

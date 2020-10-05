@@ -72,6 +72,8 @@
     }
 
     &--industrial {
+      column-gap: 54px;
+
       &::before {
         background-image: url("../../img/icon-industrial.png");
         background-position: center 20px;
@@ -101,10 +103,6 @@
       grid-template-columns: max-content 1fr max-content;
       grid-template-rows: min-content 1fr;
       column-gap: 23px;
-    }
-
-    &--industrial {
-      column-gap: 54px;
     }
   }
 
