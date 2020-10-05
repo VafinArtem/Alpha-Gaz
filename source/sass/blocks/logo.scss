@@ -6,7 +6,9 @@
 .logo__text {
   display: block;
   font-size: 19.5px;
-  line-height: normal;
+  line-height: 27px;
+  padding-left: 3px;
+  letter-spacing: -0.2px;
   text-align: center;
   color: $special-gray;
 }

@@ -10,7 +10,7 @@
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: column;
-    gap: 31px;
+    gap: 26px;
 
     &--img {
       position: relative;
@@ -18,8 +18,8 @@
       &::before {
         @include pseudo;
 
-        top: -30px;
-        left: -30px;
+        top: -32px;
+        left: -34px;
         width: 630px;
         height: 630px;
         background-color: $special-blue-light;
@@ -33,7 +33,7 @@
   margin: 0;
 
   @media (min-width: $desktop-width) {
-    padding-top: 82px;
+    padding-top: 70px;
     font-size: 49.5px;
     font-weight: 500;
     line-height: 1.11;
