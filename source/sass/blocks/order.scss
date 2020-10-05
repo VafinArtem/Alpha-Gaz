@@ -1,0 +1,51 @@
+.order {
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  grid-template-columns: 1fr min-content;
+  row-gap: 27px;
+  column-gap: 42px;
+}
+
+.order__title {
+  font-size: 25px;
+  line-height: 1.16;
+}
+
+.order__form {
+  grid-row: 2/3;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 18px;
+}
+
+.order__input {
+  height: 54px;
+  padding-left: 22px;
+  padding-right: 22px;
+  font-size: 20.5px;
+  line-height: 1.41;
+  color: $special-blue-mid-3;
+  border: none;
+  border-radius: 10px;
+
+  &::placeholder {
+    font-family: "Ubuntu", "Tahoma", sans-serif;
+    font-size: 20.5px;
+    line-height: 1.41;
+    color: $special-blue-mid-3;
+  }
+}
+
+.order__button {
+  margin-bottom: auto;
+}
+
+.order__desc {
+  grid-row: 2/3;
+  margin: 0;
+  width: 230px;
+  font-size: 11px;
+  font-style: normal;
+  line-height: 1.36;
+  color: $special-blue-mid-2;
+}

@@ -2,6 +2,7 @@
   @media (min-width: $desktop-width) {
     position: relative;
     top: -235px;
+    margin-bottom: -235px;
   }
 }
 
@@ -33,4 +34,5 @@
 .page-main__faq {
   padding: 0 85px;
   padding-top: 93px;
+  padding-bottom: 80px;
 }
