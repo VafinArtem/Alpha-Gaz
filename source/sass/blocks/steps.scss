@@ -25,7 +25,11 @@
   display: grid;
   grid-template-columns: max-content 1fr;
   grid-template-rows: repeat(2, min-content);
-  column-gap: 15px;
+  column-gap: 7px;
+
+  @media (min-width: $desktop-width) {
+    column-gap: 15px;
+  }
 
   @media (max-width: $mobile-width-only) {
     &:not(:last-child) {
@@ -75,9 +79,13 @@
   align-self: end;
   margin: 0;
   padding-bottom: 6px;
-  font-size: 22.5px;
+  font-size: 19px;
   font-weight: 500;
   line-height: 1.11;
+
+  @media (min-width: $desktop-width) {
+    font-size: 22.5px;
+  }
 }
 
 .steps__text {
@@ -88,15 +96,28 @@
 
 .steps__wrapper {
   display: grid;
-  grid-template-columns: auto 1fr;
+  row-gap: 15px;
   margin: 0 auto;
-  padding-top: 70px;
+  padding-top: 30px;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 70px;
+    row-gap: 0;
+    grid-template-columns: auto 1fr;
+  }
 }
 
 .steps__cotacts {
-  padding-left: 31px;
+  @media (min-width: $desktop-width) {
+    padding-left: 31px;
+  }
 }
 
 .steps__button {
-  align-self: start;
+  margin: 0 auto;
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    align-self: start;
+  }
 }

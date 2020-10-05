@@ -1,6 +1,10 @@
 .title {
   margin: 0;
-  font-size: 34.5px;
+  font-size: 25px;
   font-weight: 500;
   line-height: 1.16;
+
+  @media (min-width: $desktop-width) {
+    font-size: 34.5px;
+  }
 }

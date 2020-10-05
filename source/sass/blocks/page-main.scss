@@ -9,6 +9,15 @@
   }
 }
 
+.page-main__steps {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.page-main__deliviries {
+  padding-bottom: 30px;
+}
+
 @media (min-width: $desktop-width) {
   .page-main__steps {
     padding: 0 85px;

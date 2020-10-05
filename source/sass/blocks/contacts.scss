@@ -66,20 +66,26 @@
 
 .contacts__item {
   &:not(:last-child) {
-    padding-right: 28px;
+    padding-right: 15px;
   }
 
-  &--viber {
-    padding-right: 31px;
-    padding-top: 5px;
-  }
+  @media (min-width: $desktop-width) {
+    &:not(:last-child) {
+      padding-right: 28px;
+    }
 
-  &--whatsapp {
-    padding-right: 26px;
-  }
+    &--viber {
+      padding-right: 31px;
+      padding-top: 5px;
+    }
 
-  &--mail {
-    padding-right: 28px;
+    &--whatsapp {
+      padding-right: 26px;
+    }
+
+    &--mail {
+      padding-right: 28px;
+    }
   }
 }
 
