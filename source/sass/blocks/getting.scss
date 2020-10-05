@@ -1,5 +1,11 @@
 .getting__title {
-  padding-bottom: 167px;
+  padding-bottom: 120px;
+  text-align: center;
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 167px;
+    text-align: left;
+  }
 }
 
 .getting__list {
