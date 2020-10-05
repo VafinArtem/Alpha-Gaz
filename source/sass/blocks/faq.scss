@@ -59,3 +59,9 @@
   color: $special-red;
   border-bottom: 1px dashed $special-red;
 }
+
+.faq__title {
+  @media (max-width: $mobile-width-only) {
+    text-align: center;
+  }
+}
