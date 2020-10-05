@@ -1,5 +1,6 @@
 .page-header {
   background: linear-gradient(to bottom, $basic-black 0%, $special-blue-dark 100%);
+  padding-top: 33px;
 
   @media (min-width: $desktop-width) {
     min-height: 814px;
@@ -10,6 +11,7 @@
 
 .page-header__wrapper {
   display: grid;
+  row-gap: 30px;
 
   @media (min-width: $desktop-width) {
     grid-template-columns: auto 1fr;

@@ -1,6 +1,10 @@
 .contacts {
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: auto;
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: auto 1fr;
+  }
 
   &--steps {
     grid-template-columns: auto;
@@ -13,11 +17,22 @@
 }
 
 .contacts__link {
+  font-size: 30px;
+  line-height: 15px;
+  color: $basic-white;
+
+  @media (max-width: $mobile-width-only) {
+    text-align: center;
+  }
+
+  &--email {
+    padding-top: 30px;
+    font-size: 20px;
+  }
+
   @media (min-width: $desktop-width) {
     font-size: 30px;
     line-height: 25px;
-    color: $basic-white;
-
     &--email {
       justify-self: end;
       padding-top: 9px;
@@ -29,11 +44,15 @@
 .contacts__text {
   margin: 0;
   font-size: 19.5px;
-  padding-top: 8px;
-  padding-left: 16px;
+
   letter-spacing: -0.2px;
   text-align: center;
   color: $special-gray;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 8px;
+    padding-left: 16px;
+  }
 }
 
 .contacts__wrapper {
