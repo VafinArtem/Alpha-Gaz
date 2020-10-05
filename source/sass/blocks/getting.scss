@@ -1,0 +1,84 @@
+.getting__title {
+  padding-bottom: 170px;
+}
+
+.getting__list {
+  @include list-none;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  column-gap: 60px;
+  row-gap: 174px;
+  counter-reset: section;
+}
+
+.getting__item {
+  position: relative;
+  font-size: 17px;
+  line-height: 1.32;
+
+  &::before {
+    @include pseudo;
+
+    right: 100%;
+    counter-increment: section;
+    content: counters(section, ".");
+    font-size: 70px;
+    font-weight: bold;
+    line-height: 0.57;
+    color: $special-red;
+  }
+
+  &::after {
+    @include pseudo;
+
+    counter-increment: none;
+    bottom: 100%;
+  }
+
+  &--time {
+    &::after {
+      width: 112px;
+      height: 89px;
+      background-image: url("../../img/icon-time.png");
+      background-repeat: no-repeat;
+    }
+  }
+
+  &--refueling {
+    &::after {
+      width: 93px;
+      height: 86px;
+      background-image: url("../../img/icon-fueling.png");
+      background-repeat: no-repeat;
+    }
+  }
+
+  &--counter {
+    &::after {
+      width: 91px;
+      height: 84px;
+      background-image: url("../../img/icon-gas.png");
+      background-repeat: no-repeat;
+    }
+  }
+
+  &--cisterne {
+    &::after {
+      width: 128px;
+      height: 80px;
+      background-image: url("../../img/icon-cisterne.png");
+      background-repeat: no-repeat;
+    }
+  }
+
+  &--pay {
+    &::after {
+      width: 105px;
+      height: 68px;
+      background-image: url("../../img/icon-pay.png");
+      background-repeat: no-repeat;
+    }
+  }
+}
