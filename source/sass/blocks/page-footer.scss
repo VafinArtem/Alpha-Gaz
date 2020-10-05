@@ -8,3 +8,21 @@
   padding-top: 40px;
   padding-bottom: 22px;
 }
+
+.page-footer__wrapper {
+  background-color: $special-blue-dark;
+  padding-bottom: 18px;
+}
+
+.page-footer__inner {
+  display: grid;
+  grid-template-columns: min-content 1fr auto;
+  column-gap: 73px;
+  row-gap: 30px;
+  padding: 0 85px;
+  padding-top: 41px;
+}
+
+.page-footer__copyright {
+  grid-column: 1/-1;
+}

@@ -1,0 +1,17 @@
+.made__link {
+  display: flex;
+  font-size: 14px;
+  line-height: 18px;
+  color: $special-blue-mid-4;
+
+  &--year {
+    display: block;
+    padding-left: 7px;
+    font-size: 9.5px;
+    line-height: 1.63;
+  }
+
+  &--sites {
+    padding-top: 12px;
+  }
+}
