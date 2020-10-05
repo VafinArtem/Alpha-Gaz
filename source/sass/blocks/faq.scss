@@ -7,17 +7,25 @@
   align-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
-  height: 570px;
+
   padding-top: 49px;
+
+  @media (min-width: $desktop-width) {
+    height: 570px;
+  }
 }
 
 .faq__item {
-  width: 533px;
   border: solid 2px $special-yelow-light;
   border-radius: 10px;
+  margin-bottom: 30px;
 
-  &:nth-child(odd) {
-    margin-bottom: 40px;
+  @media (min-width: $desktop-width) {
+    width: 533px;
+
+    &:nth-child(odd) {
+      margin-bottom: 40px;
+    }
   }
 }
 
