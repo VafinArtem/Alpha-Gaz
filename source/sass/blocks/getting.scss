@@ -11,7 +11,6 @@
   padding-left: 46px;
 
   @media (min-width: $desktop-width) {
-    display: grid;
     grid-template-columns: 273px 325px 1fr;
     grid-template-rows: auto;
     column-gap: 106px;
