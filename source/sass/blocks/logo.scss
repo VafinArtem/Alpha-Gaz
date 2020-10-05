@@ -1,6 +1,11 @@
 .logo {
   display: block;
   width: 226px;
+
+  &--section {
+    margin-bottom: -10px;
+    margin-right: 72px;
+  }
 }
 
 .logo__text {
