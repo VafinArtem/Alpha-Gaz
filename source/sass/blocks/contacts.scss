@@ -45,13 +45,11 @@
   }
 }
 
-.contacts__list {
-  @include list-none;
-  display: flex;
-  align-items: center;
-}
-
 .contacts__item {
+  &:not(:last-child) {
+    padding-right: 28px;
+  }
+
   &--viber {
     padding-right: 31px;
     padding-top: 5px;
@@ -63,6 +61,36 @@
 
   &--mail {
     padding-right: 28px;
+  }
+}
+
+.contacts__list {
+  @include list-none;
+  display: flex;
+  align-items: center;
+
+  &--footer {
+    align-items: flex-start;
+
+    & .contacts__item {
+      &--viber {
+        padding-right: 22px;
+      }
+
+      &--whatsapp {
+        padding-top: 6px;
+        padding-right: 21px;
+      }
+
+      &--mail {
+        padding-top: 6px;
+        padding-right: 22px;
+      }
+
+      &--phone {
+        padding-top: 3px;
+      }
+    }
   }
 }
 

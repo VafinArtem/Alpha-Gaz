@@ -3,7 +3,7 @@
   box-shadow: 0 0 50px 40px transparentize($basic-black, 0.6);
 
   @media (min-width: $desktop-width) {
-    height: 814px;
+    min-height: 814px;
     padding-top: 33px;
   }
 }

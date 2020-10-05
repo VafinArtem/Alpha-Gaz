@@ -7,15 +7,18 @@
   align-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
-  height: 591px;
+  height: 570px;
   padding-top: 49px;
 }
 
 .faq__item {
   width: 533px;
-  margin-bottom: 43px;
   border: solid 2px $special-yelow-light;
   border-radius: 10px;
+
+  &:nth-child(odd) {
+    margin-bottom: 40px;
+  }
 }
 
 .faq__question {
@@ -34,7 +37,7 @@
   margin: 0;
   padding-right: 29px;
   padding-left: 29px;
-  padding-top: 20px;
+  padding-top: 14px;
   padding-bottom: 21px;
   font-size: 17px;
   line-height: 1.32;
