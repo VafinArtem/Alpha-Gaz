@@ -132,6 +132,10 @@
     padding-top: 0;
     padding-right: 27px;
   }
+
+  &--padding {
+    padding-bottom: 20px;
+  }
 }
 
 .services__title {
@@ -194,10 +198,12 @@
 
   &--refueling {
     width: 300px;
+    padding-bottom: 20px;
   }
 
   &--supply {
     grid-column: 2/3;
+    padding-bottom: 20px;
   }
 }
 
@@ -237,4 +243,8 @@
       line-height: 49px;
     }
   }
+}
+
+.services__advantages {
+  padding-bottom: 20px;
 }
