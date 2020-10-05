@@ -17,10 +17,25 @@
 }
 
 .steps__item {
+  position: relative;
   display: grid;
   grid-template-columns: max-content 1fr;
   grid-template-rows: repeat(2, min-content);
   column-gap: 15px;
+
+  &:not(:last-child) {
+    &::before {
+      @include pseudo;
+
+      top: 50%;
+      left: 100%;
+      width: 19px;
+      height: 34px;
+      margin-top: -17px;
+      margin-left: 50px;
+      background-image: url("../../img/icon-arrow.png");
+    }
+  }
 
   &--refueling {
     padding-left: 25px;
