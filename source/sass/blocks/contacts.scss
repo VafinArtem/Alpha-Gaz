@@ -2,17 +2,21 @@
   display: grid;
   grid-template-columns: auto;
 
+  @media (max-width: $mobile-width-only) {
+    padding-top: 15px;
+  }
+
   @media (min-width: $desktop-width) {
     grid-template-columns: auto 1fr;
-  }
 
-  &--steps {
-    grid-template-columns: auto;
-  }
+    &--steps {
+      grid-template-columns: auto;
+    }
 
-  &--footer {
-    grid-template-columns: auto 1fr;
-    column-gap: 67px;
+    &--footer {
+      grid-template-columns: auto 1fr;
+      column-gap: 67px;
+    }
   }
 }
 
@@ -96,7 +100,11 @@
   align-items: center;
 
   &--footer {
-    align-items: flex-start;
+    margin: 0 auto;
+    @media (min-width: $desktop-width) {
+      margin: 0;
+      align-items: flex-start;
+    }
 
     & .contacts__item {
       &--viber {

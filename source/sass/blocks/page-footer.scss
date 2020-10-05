@@ -3,6 +3,15 @@
   background-color: $special-blue-light;
 }
 
+.page-footer__wrapper {
+  background-color: $special-blue-dark;
+  padding-bottom: 13px;
+}
+
+.page-footer__inner {
+  padding-top: 30px;
+}
+
 @media (min-width: $desktop-width) {
   .page-footer__order {
     padding: 0 85px;
@@ -12,11 +21,6 @@
     padding: 0 170px;
     padding-top: 42px;
     padding-bottom: 20px;
-  }
-
-  .page-footer__wrapper {
-    background-color: $special-blue-dark;
-    padding-bottom: 13px;
   }
 
   .page-footer__inner {

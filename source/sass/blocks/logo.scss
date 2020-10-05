@@ -26,5 +26,9 @@
 
   &--footer {
     text-align: left;
+
+    @media (max-width: $mobile-width-only) {
+      text-align: center;
+    }
   }
 }
