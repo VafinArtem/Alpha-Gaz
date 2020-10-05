@@ -1,15 +1,16 @@
 .getting__title {
-  padding-bottom: 170px;
+  padding-bottom: 167px;
 }
 
 .getting__list {
   @include list-none;
 
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 273px 325px 1fr;
   grid-template-rows: auto;
-  column-gap: 60px;
-  row-gap: 174px;
+  padding-left: 46px;
+  column-gap: 106px;
+  row-gap: 167px;
   counter-reset: section;
 }
 
@@ -21,7 +22,8 @@
   &::before {
     @include pseudo;
 
-    right: 100%;
+    left: -53px;
+    top: 7px;
     counter-increment: section;
     content: counters(section, ".");
     font-size: 70px;
@@ -35,10 +37,12 @@
 
     counter-increment: none;
     bottom: 100%;
+    margin-bottom: 16px;
   }
 
   &--time {
     &::after {
+      left: -6px;
       width: 112px;
       height: 89px;
       background-image: url("../../img/icon-time.png");
@@ -48,6 +52,8 @@
 
   &--refueling {
     &::after {
+      margin-bottom: 12px;
+      left: 3px;
       width: 93px;
       height: 86px;
       background-image: url("../../img/icon-fueling.png");
@@ -56,7 +62,11 @@
   }
 
   &--counter {
+    margin-left: 20px;
+
     &::after {
+      left: -3px;
+      margin-bottom: 17px;
       width: 91px;
       height: 84px;
       background-image: url("../../img/icon-gas.png");
@@ -66,6 +76,8 @@
 
   &--cisterne {
     &::after {
+      left: -3px;
+      margin-bottom: 12px;
       width: 128px;
       height: 80px;
       background-image: url("../../img/icon-cisterne.png");
@@ -74,7 +86,11 @@
   }
 
   &--pay {
+    padding-right: 45px;
+
     &::after {
+      left: -1px;
+      margin-bottom: 13px;
       width: 105px;
       height: 68px;
       background-image: url("../../img/icon-pay.png");
