@@ -1,8 +1,12 @@
 .advantages {
-  padding-left: 49px;
+  padding-left: 30px;
 
-  &--supply {
-    padding-left: 24px;
+  @media (min-width: $desktop-width) {
+    padding-left: 49px;
+
+    &--supply {
+      padding-left: 24px;
+    }
   }
 }
 
@@ -23,8 +27,11 @@
 
   &--supply {
     row-gap: 19px;
-    width: 211px;
     padding-top: 15px;
+
+    @media (min-width: $desktop-width) {
+      width: 211px;
+    }
   }
 }
 
@@ -33,6 +40,14 @@
   font-size: 17px;
   line-height: 1.32;
   color: $basic-white;
+
+  & br {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+      display: inline;
+    }
+  }
 
   &::before {
     @include pseudo;

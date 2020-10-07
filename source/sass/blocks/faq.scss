@@ -7,11 +7,11 @@
   align-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
-
-  padding-top: 49px;
+  padding-top: 30px;
 
   @media (min-width: $desktop-width) {
     height: 570px;
+    padding-top: 49px;
   }
 }
 
@@ -19,6 +19,7 @@
   border: solid 2px $special-yelow-light;
   border-radius: 10px;
   margin-bottom: 30px;
+  width: 100%;
 
   @media (min-width: $desktop-width) {
     width: 533px;

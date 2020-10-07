@@ -46,17 +46,22 @@
 }
 
 .order__button {
-  margin-bottom: auto;
+  margin: 0 auto;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: auto;
+  }
 }
 
 .order__desc {
   margin: 0;
-  width: 230px;
-  font-size: 11px;
+  font-size: 13px;
   line-height: 1.36;
   color: $special-blue-mid-2;
 
   @media (min-width: $desktop-width) {
     grid-row: 2/3;
+    width: 230px;
+    font-size: 11px;
   }
 }

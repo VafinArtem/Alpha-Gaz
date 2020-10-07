@@ -2,10 +2,6 @@
   display: grid;
   grid-template-columns: auto;
 
-  @media (max-width: $mobile-width-only) {
-    padding-top: 15px;
-  }
-
   @media (min-width: $desktop-width) {
     grid-template-columns: auto 1fr;
 
@@ -67,10 +63,6 @@
 
   &--footer {
     justify-content: start;
-  }
-
-  @media (max-width: $mobile-width-only) {
-    padding-top: 15px;
   }
 }
 

@@ -34,6 +34,7 @@
   @media (max-width: $mobile-width-only) {
     &:not(:last-child) {
       &::before {
+        margin-top: 9px;
         transform: rotate(90deg);
       }
     }

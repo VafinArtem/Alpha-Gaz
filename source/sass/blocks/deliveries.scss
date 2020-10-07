@@ -35,6 +35,7 @@
     font-size: 19.5px;
     font-weight: 500;
     line-height: 1.54;
+    text-align: center;
   }
 
   @media (min-width: $desktop-width) {
@@ -51,6 +52,7 @@
       font-size: 19.5px;
       font-weight: 500;
       line-height: 1.54;
+      text-align: left;
 
       &::before {
         @include pseudo;
@@ -82,9 +84,14 @@
 .deliveries__list {
   @include list-none;
 
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+
   @media (min-width: $desktop-width) {
     grid-column: 1/2;
     grid-row: 4/5;
+    display: block;
     padding-left: 35px;
   }
 }
