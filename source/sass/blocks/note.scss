@@ -5,10 +5,14 @@
   border: 1px solid $special-gray-light;
   border-radius: 10px;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     grid-template-columns: auto 1fr;
-    column-gap: 52px;
+    column-gap: 25px;
     padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    column-gap: 52px;
     padding-right: 136px;
   }
 }
@@ -21,17 +25,24 @@
   letter-spacing: 0.2px;
   color: $basic-white;
 
+  @media (min-width: $tablet-width) {
+    padding-right: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 17.5px;
+  }
+
   @media (min-width: $desktop-width) {
+    font-size: 19.5px;
     padding-top: 42px;
     padding-bottom: 40px;
-    font-size: 19.5px;
   }
 }
 
 .note__img {
   display: none;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     display: block;
   }
 }

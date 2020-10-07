@@ -13,10 +13,12 @@
 
   display: grid;
   row-gap: 50px;
+  justify-content: center;
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 322px 1fr;
     column-gap: 100px;
+    justify-content: initial;
   }
 }
 
@@ -29,18 +31,7 @@
 
   @media (min-width: $desktop-width) {
     column-gap: 15px;
-  }
 
-  @media (max-width: $mobile-width-only) {
-    &:not(:last-child) {
-      &::before {
-        margin-top: 9px;
-        transform: rotate(90deg);
-      }
-    }
-  }
-
-  @media (min-width: $desktop-width) {
     &--refueling {
       padding-left: 25px;
     }
@@ -56,16 +47,19 @@
 
       width: 19px;
       height: 34px;
+      margin-top: 9px;
       left: 50%;
       top: 100%;
-
       background-image: url("../../img/icon-arrow.png");
+
+      transform: rotate(90deg);
 
       @media (min-width: $desktop-width) {
         top: 50%;
         left: 100%;
         margin-top: -17px;
         margin-left: 50px;
+        transform: rotate(0deg);
       }
     }
   }
@@ -101,16 +95,11 @@
   margin: 0 auto;
   padding-top: 30px;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     padding-top: 70px;
     row-gap: 0;
+    column-gap: 31px;
     grid-template-columns: auto 1fr;
-  }
-}
-
-.steps__cotacts {
-  @media (min-width: $desktop-width) {
-    padding-left: 31px;
   }
 }
 
