@@ -9,6 +9,11 @@
     display: none;
   }
 
+  @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: min-content;
+  }
+
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: min-content;
@@ -31,8 +36,23 @@
     padding: 15px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
+    grid-column: 1/-1;
     grid-template-columns: 1fr auto;
+    column-gap: 28px;
+    padding-left: 30px;
+
+    &--wide {
+      grid-template-columns: 1fr 1fr;
+      padding: 30px;
+      & img {
+        display: none;
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: auto;
     column-gap: 28px;
     min-height: 426px;
     padding-left: 32px;
@@ -103,6 +123,12 @@
       grid-template-columns: max-content 1fr max-content;
       grid-template-rows: min-content 1fr;
       column-gap: 23px;
+      padding: 0;
+      padding-left: 32px;
+
+      & img {
+        display: block;
+      }
     }
   }
 
@@ -144,7 +170,7 @@
     align-items: center;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     padding-top: 39px;
 
     &--amount {
@@ -164,6 +190,18 @@
     &--padding {
       padding-bottom: 20px;
     }
+
+    &--refueling {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    @media (min-width: $desktop-width) {
+      &--refueling {
+        display: block;
+      }
+    }
   }
 }
 
@@ -172,6 +210,20 @@
   padding-bottom: 18px;
   font-size: 25px;
   color: $basic-white;
+
+  @media (min-width: $tablet-width) {
+    &--refueling {
+      grid-column: 1/3;
+      padding-top: 42px;
+      padding-bottom: 20px;
+    }
+
+    &--supply {
+      grid-column: 1/-1;
+      padding-top: 43px;
+      padding-bottom: 20px;
+    }
+  }
 
   @media (min-width: $desktop-width) {
     font-size: 30px;
@@ -195,7 +247,6 @@
     &--supply {
       grid-column: 2/4;
       padding-top: 43px;
-      padding-bottom: 20px;
     }
   }
 }
@@ -248,11 +299,11 @@
 .services__img {
   display: none;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
+    display: block;
     grid-column: 2/3;
     grid-row: 1/-1;
     align-self: center;
-    display: block;
 
     &--refueling {
       grid-column: 3/4;
