@@ -2,8 +2,14 @@
   background: linear-gradient(to bottom, $basic-black 0%, $special-blue-dark 100%);
   padding-top: 33px;
 
+  @media (min-width: $tablet-width) {
+    min-height: 400px;
+    padding-bottom: 30px;
+  }
+
   @media (min-width: $desktop-width) {
     min-height: 814px;
+    padding-bottom: 0;
     padding-top: 33px;
     box-shadow: 0 0 50px 40px transparentize($basic-black, 0.6);
   }
@@ -12,6 +18,11 @@
 .page-header__wrapper {
   display: grid;
   row-gap: 30px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: auto 1fr;
+    gap: 30px;
+  }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: auto 1fr;

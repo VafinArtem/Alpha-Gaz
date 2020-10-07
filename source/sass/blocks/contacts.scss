@@ -2,6 +2,11 @@
   display: grid;
   grid-template-columns: auto;
 
+  @media (min-width: $tablet-width) {
+    grid-template-columns: auto 1fr;
+    column-gap: 20px;
+  }
+
   @media (min-width: $desktop-width) {
     grid-template-columns: auto 1fr;
 
@@ -31,6 +36,13 @@
     font-size: 20px;
   }
 
+  @media (min-width: $tablet-width) {
+    &--email {
+      padding-top: 25px;
+      font-size: 20px;
+    }
+  }
+
   @media (min-width: $desktop-width) {
     font-size: 30px;
     line-height: 25px;
@@ -51,7 +63,7 @@
   text-align: center;
   color: $special-gray;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     padding-top: 8px;
     padding-left: 16px;
   }

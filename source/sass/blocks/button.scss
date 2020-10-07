@@ -12,4 +12,16 @@
   border: none;
   box-shadow: 1.4px 9.9px 9px 0 rgba(0, 0, 0, 0.11);
   background-color: $special-blue;
+
+  @media (min-width: $tablet-width) {
+    min-height: 50px;
+    width: 178px;
+    font-size: 18.5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 54px;
+    width: 185px;
+    font-size: 20.5px;
+  }
 }
