@@ -35,10 +35,14 @@
   padding-left: 29px;
   padding-top: 15px;
   padding-bottom: 17px;
-  font-size: 23.5px;
+  font-size: 20.5px;
   font-weight: 500;
   line-height: 1.28;
   background-color: $special-yelow-light;
+
+  @media (min-width: $desktop-width) {
+    font-size: 23.5px;
+  }
 }
 
 .faq__answer {
