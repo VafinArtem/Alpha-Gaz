@@ -56,6 +56,10 @@
     font-size: 15px;
   }
 
+  @media (min-width: $desktop-width) {
+    font-size: 17px;
+  }
+
   &::after {
     @include pseudo;
 

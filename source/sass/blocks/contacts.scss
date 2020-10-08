@@ -5,17 +5,22 @@
   @media (min-width: $tablet-width) {
     grid-template-columns: auto 1fr;
     column-gap: 20px;
+
+    &--footer {
+      // grid-template-columns: auto;
+      // grid-template-rows: auto 1fr;
+      column-gap: 67px;
+    }
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: auto 1fr;
-
     &--steps {
       grid-template-columns: auto;
     }
 
     &--footer {
       grid-template-columns: auto 1fr;
+      grid-template-rows: auto;
       column-gap: 67px;
     }
   }
@@ -120,6 +125,7 @@
     @media (min-width: $desktop-width) {
       margin: 0;
       align-items: flex-start;
+      grid-row: auto;
     }
 
     & .contacts__item {
