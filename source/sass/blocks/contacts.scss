@@ -17,7 +17,7 @@
 
       & .contacts__link--email {
         font-size: 20px;
-        padding-top: 10px;
+        padding-top: 15px;
       }
     }
   }
@@ -34,6 +34,11 @@
 
       & .contacts__link--phone {
         font-size: 30px;
+      }
+
+      & .contacts__link--email {
+        font-size: 20px;
+        padding-top: 7px;
       }
     }
   }

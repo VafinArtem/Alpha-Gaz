@@ -38,6 +38,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    max-width: none;
     gap: 26px;
 
     &--img {
