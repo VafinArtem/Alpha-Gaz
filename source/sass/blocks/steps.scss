@@ -65,8 +65,11 @@
   }
 }
 
-.steps__img {
+.steps__inner {
   grid-row: 1/-1;
+}
+
+.steps__img {
   display: block;
 }
 

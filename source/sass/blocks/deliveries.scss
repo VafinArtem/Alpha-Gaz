@@ -68,7 +68,7 @@
   }
 }
 
-.deliveries__img {
+.deliveries__inner {
   display: none;
 
   @media (min-width: $desktop-width) {
@@ -79,6 +79,10 @@
     display: block;
     z-index: -2;
   }
+}
+
+.deliveries__img {
+  display: block;
 }
 
 .deliveries__list {
