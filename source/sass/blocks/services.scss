@@ -214,13 +214,11 @@
   @media (min-width: $tablet-width) {
     &--refueling {
       grid-column: 1/3;
-      padding-top: 42px;
       padding-bottom: 20px;
     }
 
     &--supply {
       grid-column: 1/-1;
-      padding-top: 43px;
       padding-bottom: 20px;
     }
   }
