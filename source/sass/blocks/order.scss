@@ -19,9 +19,16 @@
   display: grid;
   row-gap: 19px;
 
+  @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    column-gap: 19px;
+  }
+
   @media (min-width: $desktop-width) {
     grid-row: 2/3;
     grid-template-columns: 371px 231px auto;
+    grid-template-rows: auto;
     column-gap: 19px;
   }
 }
@@ -48,7 +55,12 @@
 .order__button {
   margin: 0 auto;
 
+  @media (min-width: $tablet-width) {
+    grid-column: 1/-1;
+  }
+
   @media (min-width: $desktop-width) {
+    grid-column: auto;
     margin: 0;
     margin-bottom: auto;
   }

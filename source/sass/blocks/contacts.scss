@@ -10,6 +10,15 @@
       // grid-template-columns: auto;
       // grid-template-rows: auto 1fr;
       column-gap: 67px;
+
+      & .contacts__link--phone {
+        font-size: 25px;
+      }
+
+      & .contacts__link--email {
+        font-size: 20px;
+        padding-top: 10px;
+      }
     }
   }
 
@@ -22,6 +31,10 @@
       grid-template-columns: auto 1fr;
       grid-template-rows: auto;
       column-gap: 67px;
+
+      & .contacts__link--phone {
+        font-size: 30px;
+      }
     }
   }
 }
@@ -126,9 +139,15 @@
   &--footer {
     margin: 0 auto;
 
+    @media (min-width: $tablet-width) {
+      justify-self: end;
+      margin: 0;
+    }
+
     @media (min-width: $desktop-width) {
       margin: 0;
       align-items: flex-start;
+      justify-self: start;
       grid-row: auto;
     }
 
