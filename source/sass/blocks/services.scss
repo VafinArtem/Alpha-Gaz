@@ -303,6 +303,20 @@
     grid-row: 1/-1;
     align-self: center;
 
+    &--supply {
+      grid-column: 1/2;
+      grid-row: 1/3;
+      align-self: end;
+    }
+  }
+}
+
+.services__box {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+
     &--refueling {
       grid-column: 3/4;
       grid-row: 1/3;

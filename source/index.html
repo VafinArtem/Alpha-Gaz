@@ -38,8 +38,12 @@
         <a href="#" class="special__button button">Заказать газ</a>
       </div>
       <div class="special__wrapper special__wrapper--img">
-        <img src="img/main-marcedes@1x.png" width="646" height="446"
-          alt="Белый газовоз Mercedes с надписью Огнеопасно на цистерне" class="special__img">
+        <picture>
+          <source type="image/webp" srcset="img/main-marcedes@1x.webp 1x, img/main-marcedes@2x.webp 2x">
+          <img src="img/main-marcedes@1x.png" width="646" height="446"
+            alt="Белый газовоз Mercedes с надписью Огнеопасно на цистерне" class="special__img"
+            srcset="img/main-marcedes@2x.png 2x">
+        </picture>
       </div>
     </section>
   </header>
@@ -83,7 +87,11 @@
               <p class="services__desc">объектов<br> заправляем в месяц</p>
             </div>
           </div>
-          <img src="img/mercedes.png" width="204" height="426" alt="Белый газовоз Mercedes" class="services__img">
+          <picture>
+            <source type="image/webp" srcset="img/mercedes.webp 1x, img/mercedes@2x.webp 2x">
+            <img src="img/mercedes.png" width="204" height="426" alt="Белый газовоз Mercedes" class="services__img"
+              srcset="img/mercedes@2x.png 2x">
+          </picture>
         </li>
         <li class="services__item services__item--gray services__item--industrial">
           <div class="services__inner services__inner--padding">
@@ -93,10 +101,18 @@
               обеспечивать бесперебойность поставок в любое время года.</p>
           </div>
           <div class="services__inner services__inner--industrial">
-            <img src="img/count@1x.png" width="182" height="93" alt="Счетчик газа на газовозе" class="services__img">
+            <picture>
+              <source type="image/webp" srcset="img/count@1x.webp 1x, img/count@2x.webp 2x">
+              <img src="img/count@1x.png" width="182" height="93" alt="Счетчик газа на газовозе" class="services__img"
+                srcset="img/count@2x.png 2x">
+            </picture>
             <p class="services__text services__text--offer">При покупке<br> от 60 000 л СУГ <br>в месяц –
               техобслуживание в подарок!</p>
-            <img src="img/volvo@1x.png" width="182" height="93" alt="Синий газовоз Volvo" class="services__img">
+            <picture>
+              <source type="image/webp" srcset="img/volvo@1x.webp 1x, img/volvo@2x.webp 2x">
+              <img src="img/volvo@1x.png" width="182" height="93" alt="Синий газовоз Volvo" class="services__img"
+                srcset="img/volvo@2x.png 2x">
+            </picture>
           </div>
         </li>
         <li class="services__item services__item--blue services__item--wide">
@@ -114,13 +130,24 @@
               <li class="advantages__item advantages__item--blue">Кратчайшие сроки.<br> Газ всегда в наличии!</li>
             </ul>
           </div>
-          <img src="img/mercedes-refueling@1x.png" width="543" height="426" alt="Белый газовоз Mercedes заправляет АГЗС"
-            class="services__img services__img--refueling">
+          <div class="services__box services__box--refueling">
+            <picture>
+              <source type="image/webp" srcset="img/mercedes-refueling@1x.webp 1x, img/mercedes-refueling@2x.webp 2x">
+              <img src="img/mercedes-refueling@1x.png" width="543" height="426"
+                alt="Белый газовоз Mercedes заправляет АГЗС" class="services__img"
+                srcset="img/mercedes-refueling@2x.png 2x">
+            </picture>
+          </div>
         </li>
         <li class="services__item services__item--yelow services__item--wide">
-          <img src="img/mercedes-drive@1x.png" width="548" height="390"
-            alt="Серебристый газовоз Mercedes движется по автодороге дотсавляя газ"
-            class="services__img services__img--supply">
+          <div class="services__box services__box--supply">
+            <picture>
+              <source type="image/webp" srcset="img/mercedes-drive@1x.webp 1x, img/mercedes-drive@2x.webp 2x">
+              <img src="img/mercedes-drive@1x.png" width="548" height="390"
+                alt="Серебристый газовоз Mercedes движется по автодороге дотсавляя газ" class="services__img"
+                srcset="img/mercedes-drive@2x.png 2x">
+            </picture>
+          </div>
           <h3 class="services__title services__title--supply">Оптовые поставки СУГ</h3>
           <p class="services__text services__text--supply">Специализируемся на оптовых магистральных перевозках,
             используя для этого собственный обширный парк тягачей и полуприцепов к ним.<br><br> Наше хранилище объемом
