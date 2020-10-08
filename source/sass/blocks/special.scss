@@ -1,11 +1,12 @@
 .special {
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 1fr auto;
+    grid-template-columns: repeat(2, 1fr);
     gap: 30px;
   }
 
   @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr auto;
     gap: 74px;
   }
 }
@@ -15,8 +16,12 @@
   flex-direction: column;
   gap: 15px;
   @media (min-width: $tablet-width) {
+    max-width: 325px;
+    justify-self: end;
+
     &--img {
       position: relative;
+      justify-self: start;
       justify-content: center;
 
       &::before {
